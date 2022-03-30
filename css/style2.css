@@ -152,18 +152,23 @@ section.sidemenu {
     position: relative;
 }
 
-.sec-2:not(.mack.mack-2) .image-cover a.advertise-btn {
+/* .sec-2 .image-cover a.advertise-btn {
+    position: absolute;
+    right: 0;
+    top: 25%;
+    transform: translate(-50%,-50%);
+    padding: 25px 0;
+} */
+.sec-2 .image-cover a.advertise-btn {
     position: fixed;
     right: 0;
-    top: 140px;
-}
-
-.sec-2.mack.mack-2 .image-cover a.advertise-btn {
-    position: absolute;
-    left: -35px;
-    bottom: 15%;
+    top: 20%;
     /* transform: translate(0,-50%); */
     padding: 25px 0;
+}
+
+.sec-2 .image-cover a.advertise-btn img {
+    height: 400px;
 }
 
 .sec-2 .content-cover .product-description .slide-content p {
@@ -445,18 +450,11 @@ footer.copyright.cpt2 {
     color: transparent;
 }
 
-.sec-2 .image-cover .ex-btn a.advertise-btn {
-    position: absolute;
-    left: -140px;
-    bottom: 10%;
-}
-
 /* /Macup-2 */
 
 .res-menu {
     display: none;
 }
-
 
 
 
@@ -555,15 +553,11 @@ footer.copyright.cpt2 {
     .sec-2 .image-cover a.advertise-btn {
         position: absolute;
     }
-    .sec-2 .image-cover .lady-img {
-        width: 100% !important;
-    }    
     .sec-2 .image-cover {
-        text-align: right !important;
+        text-align: left !important;
     }
     .sec-2 > .container-fluid {
         padding-left: 0;
-        padding-right: 0;
     }
     footer.copyright {
         margin: 25px    ;
@@ -584,15 +578,6 @@ footer.copyright.cpt2 {
     .sec-2.mack.mack-2 .price-content .discription-blk a {
         margin-bottom: 30px;
     }
-    .sec-2.mack.mack-2 .row {
-        margin: 0;
-    }
-    .sec-2:not(.mack.mack-2) .image-cover a.advertise-btn {
-        position: absolute;
-    }
-    .sec-2.mack.mack-2 .image-cover a.advertise-btn {
-        left: 125px;
-    }
 }
 
 @media (max-width : 767px){
@@ -606,11 +591,22 @@ footer.copyright.cpt2 {
     .sec-2 .content-cover .product-image {
         width: 100%;
     }
-    /*  */
-    .res-menu {
-        display: block;
+    .sec-2 {
+        width: 100% !important;
     }
-
+    .sidebar {
+        position: fixed !important;
+        left: -100%;
+        top: 0;
+        width: 150px;
+        padding: 0 30px;
+        overflow: auto;
+        height: 100vh;
+        justify-content: center;
+    }
+    .sec-2 .image-cover .lady-img {
+        height: auto !important;
+    }
     section.sidemenu .res-menu {
         position: absolute;
         z-index: 999;
@@ -624,28 +620,16 @@ footer.copyright.cpt2 {
         border-radius: 5px;
         color: #fff;
     }
-    .sec-2 {
-        width: 100%;
+    .sidebar .sidebar-footer i {
+        padding: 15px 10px;
     }
-    .sidebar {
-        position: fixed !important;
-        left: -100%;
-        top: 0;
-        width: 150px;
-        padding: 0 30px;
-        overflow: auto;
-        height: 100vh;
-        justify-content: center;
+    .sec-2 .content-cover {
+        flex-direction: column;
     }
-    .sec-2 .image-cover .lady-img {
-        height: auto;
+    .sec-2 .content-cover .product-image {
+        margin-bottom: 80px;
     }
-    .sec-2.mack.mack-2 .image-cover a.advertise-btn {
-        position: static;
-        margin: 0 auto !important;
+    .res-menu {
         display: block;
-        max-width: max-content;
-    }
+    }    
 }
-
-
