@@ -23,21 +23,21 @@
 <meta property="og:url" content="https://remoov.biz/">
 <meta property="og:title" content="Remoov | Your New Companion| Nailpaint Remover Pen ">
 <meta property="og:description" content="The only precision nail polish remover pen with a self-cleaning tip designed for repeated use">
-<meta property="og:image" content="https://remoov.biz/images/Preview.png">
+<meta property="og:image" content="images/preview.png">
 
 <! -- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:url" content="https://remoov.biz/">
 <meta property="twitter:title" content=" Remoov | Your New Companion| Nailpaint Remover Pen ">
 <meta property="twitter:description" content="The only precision nail polish remover pen with a self-cleaning tip designed for repeated use">
-<meta property="twitter:image" content="https://remoov.biz/images/Preview.png">
+<meta property="twitter:image" content="images/preview.png">
 
 <! -- Skype -->
 <meta property="skype:card" content="summary_large_image">
 <meta property="skype:url" content="https://remoov.biz/">
 <meta property="skype:title" content=" Remoov | Your New Companion| Nailpaint Remover Pen ">
 <meta property="skype:description" content="The only precision nail polish remover pen with a self-cleaning tip designed for repeated use">
-<meta property="skype:image" content="https://remoov.biz/images/Preview.png">
+<meta property="skype:image" content="images/preview.png">
 
 
 </head>
@@ -45,16 +45,13 @@
 <body>
     <section class="sec-3">
         <div class="popup-box">
-            <video width="100%" height="100%" muted autoplay>
+            <video width="100%" height="120%" muted autoplay>
   <source src="video.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
 
-            <div class="check-site">
-                <a href="#" class="site-btn">Continue </a>
-            </div>
-        </div>
+             </div>
     </section>
     <section class="sidemenu">
         <div class="res-menu">
@@ -202,6 +199,13 @@
         });
     </script>
     <script>
+
+window.onload = function(){
+   setInterval(function(){
+            $('.sec-3').css({ 'display': 'none' })
+   }, 9000);
+};
+
         $('.site-btn').click(function () {
             $('.sec-3').css({ 'display': 'none' })
         });
